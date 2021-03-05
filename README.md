@@ -26,6 +26,9 @@ STM32 MIDI Arduino Front   |  STM32 MIDI Arduino Back
 * Mechanical layout designed to put in and enclosure with MIDI In/Out, microSD, and USB-C on the back
 * Pin order for interfaces is in the correct order for most devices to make a clean design
 
+## Demo
+[![ubld.it YouTube Example Video](https://img.youtube.com/vi/FyQq62FIRXI/0.jpg)](https://youtu.be/FyQq62FIRXI)
+
 ## To get our board working with Arduino, it needs a bootloader (if you purchased a board from us, this is already installed)
 * Burn generic_boot20_pc13.bin to the board using [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html), [ST-Link V2 (clone)](https://www.amazon.com/dp/B07FCTR43B), [uBld.it ST-Link Clone to 0.050" 2x10 adapter board](https://www.amazon.com/dp/B08KFP7CBQ), and a [tag-connect for STM32](https://www.tag-connect.com/product/tc2030-ctx-nl-stdc14-for-use-with-stm32-processors-with-stlink-v3)  You can also use st-flash or other STM32F103-compatible SWD programming hw/sw tools.
 The bootloader is from: [Roger Clark's STM32duino-booloader Project](https://github.com/rogerclarkmelbourne/STM32duino-bootloader) and a working copy of the needed binary is in this repository.
