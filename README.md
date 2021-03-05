@@ -36,7 +36,7 @@ The bootloader is from: [Roger Clark's STM32duino-booloader Project](https://git
 The problem is likely because you have another Java Runtime Environment installed in addition to the one that comes in the Arduino IDE.  You need to update your maple_upload.bat to the one in this directory.  Search your C drive for this file - there may be multiple copies but only one is actually running.  Likely the one in:
 Users\Username\AppData\Local\Arduino15\packages\STM32\tools\STM32Tools\1.4.0\tools\win
 
-## Example STM32_MIDI_Ardunio_example.ino sketch 
+## STM32_MIDI_Ardunio_example.ino sketch 
 * Has the following connected
   * 128x32 I2C OLED on J9
   * 4x4 Matrix Keypad on J1
