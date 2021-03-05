@@ -6,9 +6,28 @@ STM32 MIDI Arduino Front   |  STM32 MIDI Arduino Back
 :-------------------------:|:-------------------------:
 ![STM32 MIDI Arduino Front](/Docs/STM32_MIDI_Arduino_Front_Render_RevB.png) | ![STM32 MIDI Arduino Back](/Docs/STM32_MIDI_Arduino_Back_Render_RevB.png)
 
+## Specifications
+* [ST32F103CBT6 72MHz 32-bit ARM Cortex(R)-M3 Microcontroller](https://www.st.com/en/microcontrollers-microprocessors/stm32f103cb.html)
+  * 128 Kbytes of Flash
+  * 20 Kbytes of SRAM
+  * USB-C Full Speed
+* Interfaces for the following
+  * MIDI (Opto-Isolated)
+  * MIDI Out 
+  * microSD card using SPI interface (card must support SPI - most <=16GB cards do)
+  * WS2812B LEDs
+  * I2C OLED display or TM1637-based 7-Segment LED display
+  * Quadrature Encoder with Switch
+  * 4x4 Matrix Keypad
+  * 6x GPIO pins + GND + 3.3V
+  * 5V + 3.3V + GND
+  * Optional power switch (need to remove 0-ohm resistor to use this)
+* Powered using 5V from the USB-C connector
+* Mechanical layout designed to put in and enclosure with MIDI In/Out, microSD, and USB-C on the back
+* Pin order for interfaces is in the correct order for most devices to make a clean design
+
 ## To get our board working with Arduino, it needs a bootloader (if you purchased a board from us, this is already installed)
-* Burn generic_boot20_pc13.bin to the board using STM32CubeProgrammer, ST-Link V2 (clone), uBld.it ST-Link Clone to 0.050" 2x10 adapter board, and a tag-connect for STM32.
-(https://www.tag-connect.com/product/tc2030-ctx-nl-stdc14-for-use-with-stm32-processors-with-stlink-v3)  You can also use st-flash or other STM32F103-compatible SWD programming hw/sw tools.
+* Burn generic_boot20_pc13.bin to the board using STM32CubeProgrammer, ST-Link V2 (clone), uBld.it ST-Link Clone to 0.050" 2x10 adapter board, and a [tag-connect for STM32](https://www.tag-connect.com/product/tc2030-ctx-nl-stdc14-for-use-with-stm32-processors-with-stlink-v3)  You can also use st-flash or other STM32F103-compatible SWD programming hw/sw tools.
 The bootloader is from: [Roger Clark's STM32duino-booloader Project](https://github.com/rogerclarkmelbourne/STM32duino-bootloader) and a working copy of the needed binary is in this repository.
 * Set the Arduino software according to the Arduino setting screenshot (Arduino_STM32_Screenshot.jpg)
 * Load an example sketch (blink should work) and hit the Upload button.  You may need to reset the board using the reset button if it is waiting.  After the first time, it should program without doing this if you use the recommended Arduino software settings
