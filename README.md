@@ -1,9 +1,10 @@
 [![uBld Electronics, LLC Logo](/images/ublditlogo_color_blue.png)](https://ubld.it)
 
 # STM32_MIDI_arduino
-Files for the ubld.it STM MIDI Arduino Board
-![STM32 MIDI Arduino Front](/Docs/STM32_MIDI_Arduino_Front_Render_RevB.png)
-![STM32 MIDI Arduino Back](/Docs/STM32_MIDI_Arduino_Back_Render_RevB.png)
+Files for the ubld.it STM32 MIDI Arduino Board
+STM32 MIDI Arduino Front   |  STM32 MIDI Arduino Back
+:-------------------------:|:-------------------------:
+![STM32 MIDI Arduino Front](/Docs/STM32_MIDI_Arduino_Front_Render_RevB.png) | ![STM32 MIDI Arduino Back](/Docs/STM32_MIDI_Arduino_Back_Render_RevB.png)
 
 ## To get our board working with Arduino, it needs a bootloader (if you purchased a board from us, this is already installed)
 * Burn generic_boot20_pc13.bin to the board using STM32CubeProgrammer, ST-Link V2 (clone), uBld.it ST-Link Clone to 0.050" 2x10 adapter board, and a tag-connect for STM32.
@@ -12,7 +13,8 @@ The bootloader is from: [Roger Clark's STM32duino-booloader Project](https://git
 * Set the Arduino software according to the Arduino setting screenshot (Arduino_STM32_Screenshot.jpg)
 * Load an example sketch (blink should work) and hit the Upload button.  You may need to reset the board using the reset button if it is waiting.  After the first time, it should program without doing this if you use the recommended Arduino software settings
 
-Note: If you get some Java exception in the Arduino IDE window, it is likely because you have another Java Runtime Environment installed in addition to the one that comes in the Arduino IDE.  You need to update your maple_upload.bat to the one in this directory.  Search your C drive for this file - there may be multiple copies but only one is actually running.  Likely the one in:
+## If you get some Java exception in the Arduino IDE window
+The problem is likely because you have another Java Runtime Environment installed in addition to the one that comes in the Arduino IDE.  You need to update your maple_upload.bat to the one in this directory.  Search your C drive for this file - there may be multiple copies but only one is actually running.  Likely the one in:
 Users\Username\AppData\Local\Arduino15\packages\STM32\tools\STM32Tools\1.4.0\tools\win
 
 ## Example STM32_MIDI_Ardunio_example.ino sketch 
