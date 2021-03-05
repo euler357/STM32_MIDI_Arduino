@@ -1,9 +1,10 @@
 [![uBld Electronics, LLC Logo](/images/ublditlogo_color_blue.png)](https://ubld.it)
 
 # STM32_MIDI_arduino
-Files for the ubld.it STM MIDI Arduino Board
-![STM32 MIDI Arduino Front](/Docs/STM32_MIDI_Arduino_Front_Render_RevB.png)
-![STM32 MIDI Arduino Back](/Docs/STM32_MIDI_Arduino_Back_Render_RevB.png)
+Files for the ubld.it STM32 MIDI Arduino Board
+STM32 MIDI Arduino Front   |  STM32 MIDI Arduino Back
+:-------------------------:|:-------------------------:
+![STM32 MIDI Arduino Front](/Docs/STM32_MIDI_Arduino_Front_Render_RevB.png) | ![STM32 MIDI Arduino Back](/Docs/STM32_MIDI_Arduino_Back_Render_RevB.png)
 
 ## To get our board working with Arduino, it needs a bootloader (if you purchased a board from us, this is already installed)
 * Burn generic_boot20_pc13.bin to the board using STM32CubeProgrammer, ST-Link V2 (clone), uBld.it ST-Link Clone to 0.050" 2x10 adapter board, and a tag-connect for STM32.
