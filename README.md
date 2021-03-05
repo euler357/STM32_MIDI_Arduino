@@ -1,4 +1,14 @@
+![uBld Electronics, LLC Logo](/images/ublditlogo_color_blue.png)
+
 # STM32_MIDI_arduino
 Files for the ubld.it STM MIDI Arduino Board
 
-![uBld Electronics, LLC Logo](/images/ublditlogo_color_blue.png)
+# To get our board working with Arduino, it needs a bootloader:
+* Burn generic_boot20_pc13.bin to the board using STM32CubeProgrammer, ST-Link V2 (clone), uBld.it ST-Link Clone to 0.050" 2x10 adapter board, and a tag-connect for STM32.
+(https://www.tag-connect.com/product/tc2030-ctx-nl-stdc14-for-use-with-stm32-processors-with-stlink-v3)
+* Set the Arduino software according to the Arduino setting screenshot (Arduino_STM32_Screenshot.jpg)
+* Load an example sketch (blink should work) and hit the Upload button.  You may need to reset the board using the reset button if it is waiting.  After the first time, it should program without doing this if you use the recommended Arduino software settings
+
+Note: If you get some Java exception in the Arduino IDE window, it is likely because you have another Java Runtime Environment installed in addition to the one that comes in the Arduino IDE.  You need to update your maple_upload.bat to the one in this directory.  Search your C drive for this file - there may be multiple copies but only one is actually running.  Likely the one in:
+Users\Username\AppData\Local\Arduino15\packages\STM32\tools\STM32Tools\1.4.0\tools\win
+
