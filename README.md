@@ -37,7 +37,7 @@ The problem is likely because you have another Java Runtime Environment installe
 Users\Username\AppData\Local\Arduino15\packages\STM32\tools\STM32Tools\1.4.0\tools\win
 
 ## STM32_MIDI_Ardunio_example.ino sketch 
-* Has the following connected
+* This example will demonstrate the following connected devices
   * 128x32 I2C OLED on J9
   * 4x4 Matrix Keypad on J1
   * Mechanical Quadrature Encoder with Switch on J7
