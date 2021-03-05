@@ -5,7 +5,7 @@ Files for the ubld.it STM MIDI Arduino Board
 
 ## To get our board working with Arduino, it needs a bootloader:
 * Burn generic_boot20_pc13.bin to the board using STM32CubeProgrammer, ST-Link V2 (clone), uBld.it ST-Link Clone to 0.050" 2x10 adapter board, and a tag-connect for STM32.
-(https://www.tag-connect.com/product/tc2030-ctx-nl-stdc14-for-use-with-stm32-processors-with-stlink-v3)
+(https://www.tag-connect.com/product/tc2030-ctx-nl-stdc14-for-use-with-stm32-processors-with-stlink-v3)  You can also use st-flash or other STM32F103-compatible SWD programming hw/sw tools.
 * Set the Arduino software according to the Arduino setting screenshot (Arduino_STM32_Screenshot.jpg)
 * Load an example sketch (blink should work) and hit the Upload button.  You may need to reset the board using the reset button if it is waiting.  After the first time, it should program without doing this if you use the recommended Arduino software settings
 
