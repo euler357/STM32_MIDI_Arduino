@@ -1,0 +1,5 @@
+Silkscreen Errors
+* MIDI Input is PA10 (USART1 RX)
+* MIDI Output is PA9 (USART1 TX)
+* J7 Pin 3 (SW) is PA8
+
