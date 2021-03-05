@@ -1,4 +1,4 @@
-![uBld Electronics, LLC Logo](/images/ublditlogo_color_blue.png)
+[![uBld Electronics, LLC Logo](/images/ublditlogo_color_blue.png)](https://ubld.it)
 
 # STM32_MIDI_arduino
 Files for the ubld.it STM MIDI Arduino Board
