@@ -67,4 +67,4 @@ Users\Username\AppData\Local\Arduino15\packages\STM32\tools\STM32Tools\1.4.0\too
     * General status messages
 
 ## Here is a screenshot of working Arduino IDE settings for the Maple bootloader provided
-![STM32_MIDI_Arduino Settings](/Docs/Arduino_Settings_Screenshot.png) 
+![STM32_MIDI_Arduino Settings](/STM32_MIDI_Arduino_example/Arduino_Settings_Screenshot.png) 
